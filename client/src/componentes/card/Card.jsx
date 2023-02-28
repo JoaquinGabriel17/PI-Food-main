@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import "./card.css"
 const Card = (props) => {
     const  {image, name, dietas, diets,id } = props
         // console.log(props);
@@ -10,7 +10,7 @@ const Card = (props) => {
                 <h2 style={{height: "4rem", marginTop: "0", marginBottom: ".5rem"}} >
                    <Link to={`/detail/${id}`} style={{textDecoration: "none", color: "black"}} >{name}</Link>
                 </h2>
-                <img src={image} alt={name} style={{float: "right", borderRadius: "1rem"}} ></img>
+                <img src={image} alt={name} style={{float: "right", borderRadius: "1rem", maxWidth: "312px", minHeight:"231px"}} ></img>
                 <h3>Diets</h3>
                 <ul style={{textAlign: "start"}} >
                 {

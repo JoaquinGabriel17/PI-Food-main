@@ -21,6 +21,10 @@ const Home = () => {
         try {
             let recipeByName = await axios(`http://localhost:3001/recipes/?name=${name}`)     //SEARCH BY NAME
             setItems([...recipeByName.data].splice(0,9))
+            // recipeByName.data.forEach((rec, index) => {
+            //     allRecipes[index] = rec
+            //     // if(index === recipeByName.data.length - 1) allRecipes.splice(index + 1)
+            // })
             setApiData([...recipeByName.data])                
         } catch (error) {
             console.log(error.message)
@@ -47,13 +51,8 @@ const Home = () => {
         
         const newIndex = page * 9
         setItems([...apiData].splice(newIndex, 9))
-        if(allRecipes.length&&diet.length) {
-            allRecipes.length = 0
-            
-
-        }
+        if(allRecipes.length) allRecipes.length = 0
         setCurrentPage(page)
-        // console.log(items);
     }
     
     const nextHandler = (e) => {
@@ -101,7 +100,6 @@ const Home = () => {
         else {
             dispatch(filter(e.target.value))
             setDiet(e.target.value)
-            // setItems([...allRecipes])
         }
     }
     const handlerFilter2 = () => {

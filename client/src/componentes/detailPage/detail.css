@@ -1,0 +1,45 @@
+.detailImage{
+    inline-size: min-content;
+    border-radius: 10%;
+    position: absolute;
+    margin-left: 34rem;
+    margin-top: 6rem;
+    border-style:outset;
+    border-width: 1rem;
+    border-color: sienna;
+}
+.detailList{
+    width: 20rem;
+    text-align: start;
+    margin-left: 5rem;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #ffdd90;
+    min-width: 180vh;
+    border-style:groove;
+    border-left-width: 3rem;
+    border-right-width: 3rem;
+    border-top-width: 3rem;
+    border-color: sienna;
+}
+.back{
+    background-color: #ffdd90;
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    margin-right: 77rem;
+    margin-bottom: 32rem;
+    font-family: cursive;
+    font-size: 1rem;
+}
+.prinInfo{
+    width: 30rem;
+    height: 26rem;
+    margin-top: 0rem;
+}
+.subtitulo{
+    text-decoration: underline;
+}

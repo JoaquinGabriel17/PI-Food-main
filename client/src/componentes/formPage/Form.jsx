@@ -1,7 +1,7 @@
 import { useState } from "react"
 import validation from "./validation"
 import { useNavigate } from "react-router-dom"
-import "../homePage/home.css"
+import "./form.css"
 import axios from "axios"
 // import {Recipe} from '../../../../api/src/db'
 
@@ -50,7 +50,7 @@ const Form = () => {
                     name: newRecipe.name,
                     image: newRecipe.image,
                     dish_resume: newRecipe.dishResume,
-                    health_score: newRecipe.healthScore,
+                    healthScore: newRecipe.healthScore,
                     steps: newRecipe.steps
                 }
             })
@@ -87,7 +87,8 @@ const back = () => {
     return (
         <div className="formulario" >
             <button onClick={back} className="back" >Home</button>
-            <h1>formulario</h1>
+            <div className="campos" >
+            {/* <h1>formulario</h1> */}
             <label>Nombre: </label>
             <input type="text" name="name" value={newRecipe.name} onChange={handleForm}   className="inputs" />
             { errors.name&&<p style={{color: 'red'}}>{errors.name}</p>}
@@ -113,6 +114,7 @@ const back = () => {
                 ? <button disabled="true" className="crear" >crear</button>
                 : <button onClick={handleButton} className="crear" >crear</button>
             }
+            </div>
             {/* <button onClick={handleButton} className="crear" >crear</button> */}
         </div>
     )

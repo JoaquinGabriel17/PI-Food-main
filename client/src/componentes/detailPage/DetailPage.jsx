@@ -1,8 +1,8 @@
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
-import "../homePage/home.css"
+import "./detail.css"
 
 const Detail = () => {
     const naviagte = useNavigate()
@@ -63,19 +63,19 @@ const Detail = () => {
                 {
                      recipe.diets.map(diet => {
                         return (
-                                <li key={recipe.id}>{diet}</li>
+                                <li key={diet}>{diet}</li>
                         )
                     })
                 }
             </ul>
             </div>
-            <img className="detailImage" src={recipe.image} alt={recipe.name} />
+            <img className="detailImage" style={{maxWidth: "35rem", maxHeight: "370px"}} src={recipe.image} alt={recipe.name} />
             
             <h1 className="subtitulo" >Resumen del plato</h1>
-            <h5>{recipe.dishResume}</h5>
+            <p dangerouslySetInnerHTML={{__html: recipe.dishResume}} ></p>
             
             <h1 className="subtitulo" >Paso a paso</h1>
-            <h5>{recipe.steps}</h5>
+            <p dangerouslySetInnerHTML={{__html: recipe.steps}} ></p>
             
             
         </div>

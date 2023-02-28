@@ -1,5 +1,5 @@
 import Card from "../card/Card"
-import "../homePage/home.css"
+import "./listado.css"
 
 
 
@@ -12,7 +12,7 @@ for(let i = 0; i < Math.ceil(prop.totalPages / 9); i++){
     return ( 
         <div className="listado">
             
-            <h1>pagina: {prop.current}</h1>
+            {/* <h1 style={{color: "#ffdd90"}} >pagina: {prop.current}</h1> */}
             <button onClick={prop.prevHandler} className="botones" style={{width: "4rem"}} >Prev</button>
             {
                 pages.map((page, index) => <button onClick={() => prop.setCurrentPage(page)} className={page === prop.current ? 'chosen' : 'botones'} key={index} >{page}</button>)

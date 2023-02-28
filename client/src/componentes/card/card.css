@@ -1,0 +1,13 @@
+.card{
+    width: 29.4rem;
+    background-color: wheat;
+    display: flexbox;
+    /* height: 19.8rem; */
+    padding: .5rem;
+    margin: 1rem;
+    /* text-align: start; */
+    border: double;
+    border-radius: 2rem;
+    border-color: sienna;
+    border-width: .4rem;
+}

@@ -1,0 +1,24 @@
+.listado{
+    margin-left: 15rem;
+    margin-top: 6rem;
+    width: 70.3rem;
+    height: 90vh;
+    overflow:scroll;
+}
+.botones{
+    background-color: wheat;
+    font-family: cursive;
+    cursor: pointer;
+}
+.botones:hover{
+    background-color: sandybrown;
+}
+.chosen{
+    background-color: sandybrown;
+    cursor: pointer;
+    height: 1.6rem;
+}
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+}
