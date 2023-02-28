@@ -1,0 +1,45 @@
+.contenedor{
+    position: fixed;
+    display: flex;
+    height: 4rem;
+    margin: 1rem;
+    background-color: tomato;
+    width: 214vh;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    border-style: double;
+    border-width: thick;
+    
+}
+.segundo{
+    margin-top: 100px;
+}
+
+.links{
+    display: flex;
+    width: 29rem;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    margin-right: 32rem;
+    font-size: 1.7rem;
+}
+.search{
+    margin-left: 45rem;
+}
+
+.searchInput{
+    background: transparent;
+    border-color: black;
+    height: 1.6rem;
+}
+
+.linki{
+    color: black;
+}
+
+.linki:hover{
+    color: aliceblue;
+
+}

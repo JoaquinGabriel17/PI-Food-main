@@ -1,0 +1,153 @@
+.contain{
+    min-height: 100vh;
+    min-width: 217vh;
+    display: flex;
+    background-image: url(https://png.pngtree.com/background/20210714/original/pngtree-grilled-chicken-wings-with-tomato-sauce-and-lemon-picture-image_1198322.jpg);
+    background-size: cover;
+    /* padding: 1rem; */
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #ffdd90;
+    border-style:groove;
+    border-left-width: 3rem;
+    border-right-width: 3rem;
+    border-top-width: 3rem;
+    border-color: sienna;
+    
+}
+.subtitulo{
+    text-decoration: underline;
+}
+.prinInfo{
+    width: 30rem;
+    height: 26rem;
+    margin-top: 0rem;
+}
+
+.detailImage{
+    inline-size: min-content;
+    border-radius: 10%;
+    position: absolute;
+    margin-left: 34rem;
+    margin-top: 6rem;
+    border-style:outset;
+    border-width: 1rem;
+    border-color: sienna;
+}
+.detailList{
+    width: 20rem;
+    text-align: start;
+    margin-left: 5rem;
+}
+.formulario{
+    min-width: 218.5vh;
+    min-height: 100vh;
+    background-color: #ffdd90;
+    background-image: url(https://img.freepik.com/foto-gratis/vegetales-puestos-izquierda-pizarra-negra_1220-685.jpg?w=826&t=st=1677359907~exp=1677360507~hmac=a0a89dc26442c65d81de0f3c47d246d4073b2b93fab8c6ea243301d332897bc7);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffdd90;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.filtros{
+    position: fixed;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92vh;
+    margin-left: 1rem;
+    background-color: tomato;
+    border-style: double;
+    border-width: thick;
+    border-radius: 1rem;
+    
+}
+
+.listado{
+    margin-left: 14rem;
+    margin-top: 4rem;
+    width: 66.4rem;
+}
+
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.crear{
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    font-family: cursive;
+    background-color: #ffdd90;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    border-style: double;
+    border-color: chocolate;
+}
+.crear:hover{
+    background-color: chocolate;
+    border-color: #ffdd90;
+}
+
+
+
+.temporal{
+    display: flex;
+    height: 3rem;
+    width: 4rem;
+    margin-top: 200px;
+}
+
+.card{
+    width: 29.4rem;
+    background-color: wheat;
+    display: flexbox;
+    /* height: 19.8rem; */
+    padding: .5rem;
+    margin: 1rem;
+    /* text-align: start; */
+    border: double;
+    border-radius: 2rem;
+    border-color: sienna;
+    border-width: .4rem;
+}
+.botones{
+    background-color: wheat;
+    font-family: cursive;
+    cursor: pointer;
+}
+.inputs{
+    background: transparent;
+    border-color: #ffdd90;
+    color: white;
+}
+
+.back{
+    background-color: #ffdd90;
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    margin-right: 77rem;
+    margin-bottom: 32rem;
+    font-family: cursive;
+    font-size: 1rem;
+}
+.back:hover{
+    background-color: sandybrown;
+}
+.chosen{
+    background-color: sandybrown;
+    cursor: pointer;
+    height: 1.6rem;
+}
+.botones:hover{
+    background-color: sandybrown;
+}
