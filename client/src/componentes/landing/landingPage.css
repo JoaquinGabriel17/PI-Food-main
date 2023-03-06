@@ -1,11 +1,16 @@
  .lando{
-   min-height: 100vh;
+      min-height: 100vh;
     color: white;
-    background-image: url(https://img.freepik.com/foto-gratis/verduras_23-2148023500.jpg?w=740&t=st=1676667499~exp=1676668099~hmac=521ac5c063514a47eda2224e91b15c9c3a9b0126b53a1a36ec589ba890e4de08);
+    background-image: url(https://png.pngtree.com/background/20210706/original/pngtree-food-background-picture-image_83391.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    min-width: 218vh;
+    min-width: 218.5vh;
     font-family: cursive;
+    /* background: linear-gradient(#333, #111); */
+  /* min-height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
  }  
 
@@ -23,4 +28,60 @@
     height: 11rem;
     width: 11rem;
     cursor: pointer
+ }
+ .badge {
+   display: block;
+   position: relative;
+   width: 20rem;
+   height: 20rem;
+   cursor: pointer;
+   background: url(https://i.pinimg.com/564x/a3/38/d0/a338d02b260a5f4ec98a4108e4dc19e8.jpg) no-repeat 100% 50%;
+   background-size: 120%;
+   border-radius: 50%;
+   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+   text-decoration: none;
+ }
+ .badge:hover {
+   box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+   background-position: 0% 50%;
+ }
+ .badge:hover .text {
+   transform: rotate(-45deg) translate(0px) rotate(-315deg);
+   background: rgba(97, 5, 2, 0.486);
+   width: 20rem;
+   letter-spacing: 1rem;
+   line-height: 20rem;
+   height: 20rem;
+   margin-top: -10rem;
+   margin-left: -10rem;
+   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+ }
+ .badge .text {
+   display: block;
+   position: absolute;
+   width: 10rem;
+   height: 10rem;
+   line-height: 10rem;
+   left: 50%;
+   top: 50%;
+   margin-top: -5rem;
+   margin-left: -5rem;
+   font-size: 2rem;
+   font-family: Raleway, sans-serif;
+   text-align: center;
+   color: #fff;
+   border-radius: 50%;
+   background: tomato;
+   transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+   text-decoration: none;
+   font-family: cursive;
+   color: black;
+   /* margin-bottom: 100px; */
+ }
+ .frase{
+   text-decoration: none;
+   margin-bottom: 2rem;
  }
